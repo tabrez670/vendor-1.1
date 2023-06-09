@@ -1,0 +1,52 @@
+// .main-footer {
+//     color: rgb(235, 192, 76);
+//     background-color: #673ab78a;
+//     padding-top: 3rem;
+//     position: relative;
+//     bottom: 0;
+//     width: 100%;
+//     padding: 0;
+//     text-align: center;
+  
+//     @media (max-width: 900px) {
+//       text-align: center;
+//       width: auto;
+//     }
+//   }
+//   .row {
+//     flex-direction: row;
+//     column-gap: 10%;
+//     display: flex;
+//     margin-left: 80px;
+//     font-size: 20px;
+//   }
+//   .col {
+//     padding: 10px;
+//     text-decoration: none;
+//   }
+//   .list {
+//     text-decoration: none;
+//     color: white;
+//     font-size: 25px;
+//     list-style: none;
+//     a {
+//       color: white;
+//       text-decoration: none;
+//       background-color: transparent;
+//       outline: none;
+//       cursor: pointer;
+//       transition: color 0.3s;
+//       -webkit-text-decoration-skip: objects;
+//       &:hover {
+//         color: rgb(7, 7, 7);
+//       }
+//       #icons {
+//         a {
+//           &:hover {
+//             color: #000;
+//           }
+//         }
+//       }
+//     }
+//   }
+  

@@ -1,0 +1,31 @@
+/* .container{
+    color: blueviolet;
+    width: 100%;
+} */
+.navbar {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e4c50;
+}
+/* .logo{
+    color: green;
+    font-size: 44px;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} */
+#hed{
+    color: #F5B921;
+
+    font-size: 24px;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#usercolor{
+    color: #e8b921;
+
+    font-weight: bold;
+    font-size: 16px;
+}
