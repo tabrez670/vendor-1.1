@@ -26,7 +26,7 @@ export const Login = () => {
         setErrorMsg("");
         setTimeout(() => {
           setSuccessMsg("");
-          history.push("/");
+          history.push("/Home");
         }, 3000);
       })
       .catch((error) => setErrorMsg(error.message));
@@ -40,7 +40,7 @@ export const Login = () => {
       <hr></hr>
       {successMsg && (
         <>
-          <div className="success-msg">{successMsg}</div>
+          <div className="warning-msg">{successMsg}</div>
           <br></br>
         </>
       )}
@@ -73,9 +73,9 @@ export const Login = () => {
           </span>
           <div>
             <Link to="/Home" className="link">
-              <button className="btn m-3 btn-success btn-md">Back</button>
+              <button className="btn m-3 btn-warning btn-md">Back</button>
             </Link>
-            <button type="submit" className="btn btn-success btn-md">
+            <button type="submit" className="btn btn-warning btn-md">
               Login
             </button>
           </div>

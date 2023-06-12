@@ -31,18 +31,18 @@ export const Navbar = ({ user, totalProducts }) => {
         {!user && (
           <>
             <div>
-              <Link className="btn btn-success btn-md" to="/home">
+              <Link className="btn btn-warning btn-md" to="/home">
                 Home
               </Link>
             </div>
 
             <div>
-              <Link className="btn btn-success btn-md" to="signup">
+              <Link className="btn btn-warning btn-md" to="signup">
                 SignUp
               </Link>
             </div>
             <div>
-              <Link class="btn btn-success" to="login">
+              <Link class="btn btn-warning" to="login">
                 Login
               </Link>
             </div>
@@ -65,18 +65,18 @@ export const Navbar = ({ user, totalProducts }) => {
 
             <div>
               {user === "admin" && (
-                <Link className="btn btn-success btn-md" to="add-products">
+                <Link className="btn btn-warning btn-md" to="add-products">
                   Add Products
                 </Link>
               )}
             </div>
             <div>
-              <Link className="btn btn-success btn-md" to="farmer-Register">
+              <Link className="btn btn-warning btn-md" to="farmer-Register">
                 Register here
               </Link>
             </div>
 
-            <div className="btn btn-success btn-md" onClick={handleLogout}>
+            <div className="btn btn-warning btn-md" onClick={handleLogout}>
               Logout
             </div>
           </>

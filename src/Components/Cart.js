@@ -180,9 +180,9 @@ export const Cart = () => {
     console.log(response);
     let { status } = response.data;
     console.log(status);
-    if (status === "success") {
+    if (status === "warning") {
       history.push("/");
-      toast.success("Your order has been placed successfully", {
+      toast.warning("Your order has been placed successfully", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -228,18 +228,8 @@ export const Cart = () => {
               Total Price to Pay: <span>Rs. {totalPrice}</span>
             </div>
             <br></br>
-            {/* <StripeCheckout
-                            stripeKey='pk_test_51Hhu6bK4kL4WRmvGEUkTmdFw1lUtTAnadBSDb0eXGuA2JJGrntIBdm10llYu5RbPbLbaS1My74Rgdi0n5ePYIGB600p3V4GKmK'
-                            token={handleToken}
-                            billingAddress
-                            shippingAddress
-                            name='All Products'
-                            amount={totalPrice * 100}
-                        ></StripeCheckout>  */}
-            {/* <h6 className='text-center'
-                        style={{marginTop: 7+'px'}}>OR</h6> */}
             <button
-              className=" btn btn-success btn-md"
+              className=" btn btn-warning btn-md"
               onClick={() => triggerModal()}
             >
               Cash on Delivery

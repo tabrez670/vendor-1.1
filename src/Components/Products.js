@@ -8,7 +8,7 @@ export const Products = ({ products, addToCart }) => {
   return products.map((individualProduct) => (
 
     <Link
-      className="product btn btn-success btn-md"
+      className="product btn btn-warning btn-md"
       to={`/view/${individualProduct.ID}`}
         key={individualProduct.ID}
     >

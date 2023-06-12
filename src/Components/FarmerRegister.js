@@ -87,7 +87,7 @@ export const FarmerRegister = () => {
     <div className="container">
       <br></br>
       <br></br>
-      <h1>Vendor Register</h1>
+      <h1>User Register</h1>
       <hr></hr>
       {successMsg && (
         <>

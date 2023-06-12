@@ -19,6 +19,28 @@ export const Home = (props) => {
     return uid;
   }
 
+  const CateGory = ()=>{
+    return(
+      <>
+        <button>
+          vegetables
+        </button>
+        <button>
+          vegetables
+        </button>
+
+        <button>
+          vegetables
+        </button>
+
+        <button>
+          vegetables
+        </button>
+
+      </>
+    )
+  }
+
   const uid = GetUserUid();
 
   // getting current user function
@@ -107,8 +129,19 @@ export const Home = (props) => {
   return (
     <>
       <Navbar user={user} totalProducts={totalProducts} />
-      {/* <Banner/> */}
-
+      <div
+      style={{
+        display:"flex",
+        justifyContent:"space-evenly",
+        alignItems:"center",
+        padding:"5px"
+      }} 
+      >
+      <button className="btn btn-danger btn-md" to="farmer-Register">vegetables</button> 
+      <button className="btn btn-warning btn-md" to="farmer-Register">Daily Needs</button> 
+      <button className="btn btn-warning btn-md" to="farmer-Register">Food</button> 
+      <button className="btn btn-warning btn-md" to="farmer-Register">Flowers </button> 
+      </div>
       <br></br>
       {products.length > 0 && (
         <div className="container-fluid">

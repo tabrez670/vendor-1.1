@@ -26,7 +26,7 @@ export const App = () => {
             width: '687 px',
             height: '250px',
           margin: '100px auto',
-          backgroundColor: 'rgb(25 135 84 / 34%)',
+          backgroundColor: '#FECDAC',
           padding: '20px',
           textAlign: 'center',
           borderRadius: '5px',
@@ -46,15 +46,15 @@ export const App = () => {
       <>
         <div className="navbar">
           <div>
-            <Link className="btn btn-success btn-md" to="/home">
+            <Link className="btn btn-warning btn-md" to="/home">
               Home
             </Link>
           </div>
              <div>
-            <Link className="btn btn-success btn-md" to="signup">
+            <Link className="btn btn-warning btn-md" to="signup">
               SignUp
             </Link>
-            <Link class="btn btn-success" to="login">
+            <Link class="btn btn-warning" to="login">
               Login
             </Link>
           </div>

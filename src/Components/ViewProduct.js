@@ -53,13 +53,13 @@ function ViewProduct() {
                             </p>
             <Link to="/contact" className="link">
                             
-                            <button className="btn btn-success btn-md">
+                            <button className="btn btn-warning btn-md">
               ADD to cart
             </button>
             </Link>
 
-            <Link to="/" className="link">
-              <button className="btn m-3 btn-success btn-md">Back</button>
+            <Link to="/Home" className="link">
+              <button className="btn m-3 btn-warning btn-md">Back</button>
             </Link>
                         </div>
                     </div>

@@ -81,7 +81,7 @@ export const AddProducts = () => {
       <hr></hr>
       {successMsg && (
         <>
-          <div className="success-msg">{successMsg}</div>
+          <div className="warning-msg">{successMsg}</div>
           <br></br>
         </>
       )}
@@ -145,9 +145,9 @@ export const AddProducts = () => {
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
           <div>
             <Link to="/" className="link">
-              <button className="btn m-3 btn-success btn-md">back</button>
+              <button className="btn m-3 btn-warning btn-md">back</button>
             </Link>
-            <button type="submit" className="btn btn-success btn-md">
+            <button type="submit" className="btn btn-warning btn-md">
               SUBMIT
             </button>
           </div>

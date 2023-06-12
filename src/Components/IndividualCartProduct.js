@@ -3,12 +3,13 @@ import { Icon } from "react-icons-kit";
 import { plus } from "react-icons-kit/feather/plus";
 import { minus } from "react-icons-kit/feather/minus";
 import { auth, fs } from "../Config/Config";
-
+import {useHistory}from "react-router-dom";
 export const IndividualCartProduct = ({
   cartProduct,
   cartProductIncrease,
   cartProductDecrease,
 }) => {
+  const history = useHistory();
   const handleCartProductIncrease = () => {
     cartProductIncrease(cartProduct);
   };
@@ -24,6 +25,7 @@ export const IndividualCartProduct = ({
           .doc(cartProduct.ID)
           .delete()
           .then(() => {
+            history.push("/Home")
             console.log("successfully deleted");
           });
       }
@@ -52,7 +54,7 @@ export const IndividualCartProduct = ({
       ₹ {cartProduct.TotalProductPrice}
       </div>
       <div
-        className="btn btn-danger btn-md cart-btn"
+        className="btn btn-warning btn-md cart-btn"
         onClick={handleCartProductDelete}
       >
         DELETE

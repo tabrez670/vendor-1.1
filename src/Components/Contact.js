@@ -23,7 +23,7 @@ export const Contact = () => {
     } else {
       // fs.child("contacts").push(state);
       // setState({ name: "", email: "", subject: "", message: "" });
-      // toast.success("Form Submitted Successfully");
+      // toast.warning("Form Submitted Successfully");
 
       fs.collection("contacts")
         .add({
@@ -34,7 +34,7 @@ export const Contact = () => {
         })
         .then(() => {
           alert("are you sure to submit");
-          toast.success("Form Submitted Successfully");
+          toast.warning("Form Submitted Successfully");
         }, 3000);
     }
   };
@@ -115,10 +115,10 @@ export const Contact = () => {
                             <input
                               type="submit"
                               value="Get Quote"
-                              className="btn btn-success"
+                              className="btn btn-warning"
                             />
                             <Link to="/" className="link">
-                              <button className="btn m-3 btn-success btn-md">
+                              <button className="btn m-3 btn-warning btn-md">
                                 Back
                               </button>
                             </Link>

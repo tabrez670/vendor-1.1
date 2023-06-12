@@ -44,7 +44,7 @@ export const Modal = ({TotalPrice,totalQty,hideModal}) => {
         }
         hideModal();
         history.push('/');
-        toast.success('Your order has been placed successfully', {
+        toast.warning('Your order has been placed successfully', {
             position: 'top-right',
             autoClose: 5000,
             hideProgressBar: false,
@@ -78,7 +78,7 @@ export const Modal = ({TotalPrice,totalQty,hideModal}) => {
                     required value={cartPrice}
                 />
                 <br></br>
-                <button type='submit' className='btn btn-success btn-md'>Submit</button>
+                <button type='submit' className='btn btn-warning btn-md'>Submit</button>
             </form>
             <div className='delete-icon' onClick={handleCloseModal}>x</div>
         </div>

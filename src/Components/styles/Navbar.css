@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1e4c50;
+    background-color: #FF8A38;
 }
 /* .logo{
     color: green;
@@ -17,14 +17,14 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 } */
 #hed{
-    color: #F5B921;
+    color: #333424;
 
     font-size: 24px;
     font-weight: 800;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #usercolor{
-    color: #e8b921;
+    color: #333424;
 
     font-weight: bold;
     font-size: 16px;
