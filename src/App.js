@@ -20,8 +20,6 @@ import { Contact } from "./Components/Contact";
 export const App = () => {
     
   const HomePageComponent = () => {
-
-  
         const containerStyle = {
             width: '687 px',
             height: '250px',

@@ -68,6 +68,7 @@ export const Home = (props) => {
 
   // state of products
   const [products, setProducts] = useState([]);
+  const [categories, setCategories] = useState([]);
 
   // getting products function
     const getProducts = async () => {
@@ -84,10 +85,34 @@ export const Home = (props) => {
           setProducts(productsArray);
         }
       }
+
+
+      // const categories = await fs.collection("Categories").get();
+      // const CatArray = [];
+      // for (var snap of categories.docs) {
+      //   var data = snap.data();
+      //   data.ID = snap.id;
+      //   CatArray.push({
+      //     ...data,
+      //   });
+      //   if (CatArray.length === categories.docs.length) {
+      //     setCategories(CatArray);
+      //   console.log(categories)
+
+      //   }
+      // }
     };
 
   useEffect(() => {
     getProducts();
+    // filter products based on category and setProducts 
+    const filteredProducts = products.filter((product) => {
+      return product.category === "vegetables";
+    }
+    );
+    setProducts(filteredProducts);
+    // TODO: setProducts based on category
+
   }, []);
 
 
@@ -149,7 +174,7 @@ export const Home = (props) => {
             Recently Added
           </h1>
           <div className="products-box">
-            <Products products={products} addToCart={addToCart} />
+            <Products products={products} addToCart={addToCart}  />
           </div>
         </div>
       )}

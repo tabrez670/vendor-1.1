@@ -24,6 +24,9 @@ export const IndividualProduct = ({ individualProduct, addToCart }) => {
             <div className="product-text price" id="product-text">
                 ₹ {individualProduct.price} / kg
             </div>
+            <div className="product-text price" id="product-text">
+                {individualProduct.category} 
+            </div>
             <div
                 className="btn btn-danger btn-md cart-btn"
                 id="viewbtn"

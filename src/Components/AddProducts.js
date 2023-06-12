@@ -6,6 +6,7 @@ export const AddProducts = () => {
   const [title, setTitle] = useState("");
   const [quantity, setQuantity] = useState("");
   const [description, setDescription] = useState("");
+  const [CateGory, setCateGory] = useState("");
   const [price, setPrice] = useState("");
   const [image, setImage] = useState(null);
 
@@ -54,6 +55,7 @@ export const AddProducts = () => {
                 price: Number(price),
                 url,
                 quantity: Number(quantity),
+                category: CateGory,
               })
               .then(() => {
                 setSuccessMsg("Product added successfully");
@@ -125,6 +127,16 @@ export const AddProducts = () => {
           onChange={(e) => setPrice(e.target.value)}
           value={price}
         ></input>
+        <br></br>
+        
+        <label>Product Category</label>
+        <input
+          type="text"
+          className="form-control"
+          required
+          onChange={(e) => setCateGory(e.target.value)}
+          value={CateGory}
+          ></input>
         <br></br>
         <label>Upload Product Image</label>
         <input

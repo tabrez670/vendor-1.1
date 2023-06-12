@@ -51,6 +51,11 @@ function ViewProduct() {
                                     Available Quantity: {product.quantity}
                                 </small>
                             </p>
+                            <p className="card-text">
+                                <small className="text-muted">
+                                Category {product.category ?? "NuLL" }
+                                </small>
+                            </p>
             <Link to="/contact" className="link">
                             
                             <button className="btn btn-warning btn-md">
